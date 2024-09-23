@@ -1,0 +1,25 @@
+.form_container{
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input[type="radio"]{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.radio-container label{
+    margin-top: 10px;
+}
+
+.form-btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+

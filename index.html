@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="././css/style.css">
+    <link rel="stylesheet" href="././css/modal.css">
+    <link rel="stylesheet" href="././css/form.css">
+</head>
+<body>
+<div class="container">
+    <h1>Todo List</h1>
+    <p>Keep track of your tasks effortlessly – add your to-do items <span id="openModal" style="color: pink; cursor: pointer;">here!</span></p>
+
+    <!-- The Modal -->
+    <div id="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Todo Item</h2>
+            <form id="form" class="form_container">
+                <div style="margin-bottom: 20px">
+                    <label for="userId">User Id:</label>
+                    <input type="text" id="userId" name="userId" required>
+                </div>
+                <div style="margin-bottom: 20px">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div style="margin-bottom: 20px">
+                    <label>Status:</label>
+                    <div class="radio-container" style="display: flex">
+                        <input type="radio" id="pending" name="status" value="pending" required checked>
+                        <label for="pending">Pending</label>
+                        <input type="radio" id="complete" name="status" value="complete" required>
+                        <label for="complete">Complete</label>
+                    </div>
+                </div>
+                <button class="form-btn" type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <table id="todoTable">
+        <thead>
+        <tr>
+            <td>User Id</td>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="todotablebody">
+        <!-- Data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+</div>
+<script src="././js/script.js"></script>
+<script src="././js/modal.js"></script>
+</body>
+</html>

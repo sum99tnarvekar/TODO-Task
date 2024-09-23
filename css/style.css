@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto; /* Ensures the table scrolls horizontally on small screens */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn {
+    border: none;
+    background-color: white;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.btn-container img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+/* Add responsiveness for mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust container padding on smaller screens */
+    }
+
+    table {
+        font-size: 14px; /* Reduce table font size for smaller screens */
+    }
+
+    th, td {
+        padding: 8px; /* Reduce padding in table cells */
+    }
+}
